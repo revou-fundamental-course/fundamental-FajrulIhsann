@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portofolio Fajrul</title>
+</head>
+<body>
+    <header class="navigasi">
+        <div class="logo-icon">
+
+        </div>
+
+        <nav >
+            <ul class="link-container">
+                <li ><a href="#home-section" class="nav-link border-pinggir-a">Home</a></li>
+                <li><a href="#profile-section" class="nav-link">Our Profile</a></li>
+                <li><a href="#" class="nav-link">Portofolio</a></li>
+                <li><a href="#message-section" class="nav-link border-pinggir-b">Message Us</a></li>
+            </ul>
+            
+            
+            
+            
+        </nav>
+    </header>
+    <main>
+        <!-- Home Content -->
+        <section id="home-section">
+            <header>
+                <h1>Hello <label id="username-home">User</label>, Welcome to Website</h1>
+            </header>
+            <article>
+                <p>Ini adalah website portofolio saya</p>
+            </article>
+            <div class="banner-container"></div>
+        </section>
+
+
+        <!-- Our Profile Content -->
+         <section class="profile-section" id="profile-section">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+            <article class="profile-content">
+                <div class="profile-container">
+                    <div class="profile-icon profile-1"></div>
+                    <p>Profile 1</p>
+                </div>
+                <div class="profile-container ">
+                    <div class="profile-icon profile-2"></div>
+                    <p>Profile 2</p>
+                </div>
+                <div class="profile-container ">
+                    <div class="profile-icon profile-3"></div>
+                    <p>Profile 3</p>
+                </div>
+                <div style="display: flex; flex: 2;"></div>
+            </article>
+         </section>
+         <!-- Message Us Content -->
+          <section class="message-section" id="message-section">
+            <header>
+                <h1>Message Us</h1>
+                <article class="message-container">
+                    <div class="form-content">
+                        <form action="index.html" target="_self" method="post">
+                            <table class="formTable">
+                                <tbody><tr>
+                                    <td><label for="nama">Nama</label></td>
+                                    <td>:</td>
+                                    <td><input type="text" class="input-field" id="nama" placeholder="Nama" name="nama" style="width: 285px;"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="tanggal">Tanggal Lahir</label></td>
+                                    <td>:</td>
+                                    <td><input type="date" name="tanggal" id="date" class="input-field"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="gender">Jenis Kelamin</label></td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="radio" name="gender" id="laki"><label for="laki">Laki-laki</label>
+                                        <input type="radio" name="gender" id="perempuan"><label for="perempuan">Perempuan</label>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;"><label for="pesan">Pesan</label></td>
+                                    <td style="vertical-align: top;">:</td>
+                                    <td><textarea name="pesan" id="pesan" rows="7" style="width: 18rem; border-radius: 7px; border-style: solid; resize: none;" placeholder="Pesan"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="submit" name="submit" id=""  value="Submit" style="width: 100%;">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                            
+                            
+                           </form>
+                    </div>
+                    <div class="formValue-content">
+                        <div class="formValue-data" id="data-nama"><label class="value-header">Current Time:</label></div>
+                        <br/>
+                        <div class="formValue-data" id="data-nama"><label class="value-header">Nama:</label></div>
+                        <div class="formValue-data" id="data-tanggalLahir"><label class="value-header">Tanggal Lahir:</label></div>
+                        <div class="formValue-data" id="data-jenisKelamin"><label class="value-header">Jenis Kelamin:</label></div>
+                        <div class="formValue-data" id="data-pesan"><label class="value-header">Pesan:</label></div>
+                       
+                    </div>
+                </article>
+            </header>
+          </section>
+    </main>
+    <footer class="footer">
+        <p>Created by Fajrul</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

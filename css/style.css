@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+}
+main{
+    padding: 20px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 9px;
+    background-image: url(https://dummyimage.com/50x50/000/fff.png&text=Icon);
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    height: 4rem;
+   
+}
+
+.link-container {
+    display: flex;
+    list-style-type: none;
+    margin-right: 4rem;
+}
+
+.border-pinggir-a{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.border-pinggir-b {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-link {
+    padding: 5px 28px 5px;
+    color: black;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: #fff9f9;
+}
+
+.banner-container {
+    width: 100%;
+    height: 578px;
+    border-bottom: 1px solid;
+}
+
+.profile-section {
+    border-top: 1px solid;
+    padding-bottom: 3rem;
+}
+
+.profile-icon {
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.profile-1{
+    background-image: url(https://dummyimage.com/90x90/000/fff.png&text=Profil+1);
+}
+.profile-2{
+    background-image: url(https://dummyimage.com/90x90/000/fff.png&text=Profil+2);
+}
+.profile-3{
+    background-image: url(https://dummyimage.com/90x90/000/fff.png&text=Profil+3);
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-container p {
+    text-align: center;
+}
+
+.profile-container {
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+section {
+    margin : 3px;
+}
+
+.message-section {
+    border-top: 1px solid;
+    margin-bottom: 3rem;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: row;
+    height: 15rem;
+    justify-content: space-between;
+}
+
+.form-content {
+    flex:1;
+    align-content: center;
+    padding-left: 6rem;
+}
+
+.form-content td {
+    padding: 7px;
+}
+
+.formValue-content{
+    flex: 1;
+    border: 1px solid;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.input-field {
+    width: 18rem;
+}
+
+.value-header {
+    font-weight: bold;
+}
+
+.footer {
+    border-top: 1px solid;
+}
+
+.footer p {
+    float: right;
+    padding: 1rem 2rem 1rem;
+}
