@@ -10,6 +10,10 @@ main{
     padding: 20px;
 }
 
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .logo-icon {
     width: 50px;
     height: 50px;
@@ -52,6 +56,11 @@ main{
 
 .nav-link:hover{
     background-color: #fff9f9;
+}
+
+#home-section > header, #home-section > article {
+    margin-left: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .banner-container {
@@ -102,7 +111,7 @@ section {
 
 .message-section {
     border-top: 1px solid;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 
 .message-container {
@@ -131,14 +140,14 @@ section {
     padding: 1rem;
 }
 
+.value-header {
+    font-weight: bold;
+}
 
 .input-field {
     width: 18rem;
 }
 
-.value-header {
-    font-weight: bold;
-}
 
 .footer {
     border-top: 1px solid;
@@ -147,4 +156,22 @@ section {
 .footer p {
     float: right;
     padding: 1rem 2rem 1rem;
+}
+
+#deleteBtn {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(228, 0, 0);
+    border: none;
+}
+
+#deleteBtn-container {
+    margin-top: 2rem;
+}
+
+.formBtn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
 }

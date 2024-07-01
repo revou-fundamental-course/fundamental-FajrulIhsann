@@ -29,10 +29,10 @@
         <!-- Home Content -->
         <section id="home-section">
             <header>
-                <h1>Hello <label id="username-home">User</label>, Welcome to Website</h1>
+                <h1>Hello <label id="username-home">User</label>, Welcome To Website</h1>
             </header>
             <article>
-                <p>Ini adalah website portofolio saya</p>
+                <p>Ini adalah website latihan pertama</p>
             </article>
             <div class="banner-container"></div>
         </section>
@@ -65,35 +65,40 @@
                 <h1>Message Us</h1>
                 <article class="message-container">
                     <div class="form-content">
-                        <form action="index.html" target="_self" method="post">
+                        <form action="javascript:display();" target="_self" method="post">
                             <table class="formTable">
                                 <tbody><tr>
                                     <td><label for="nama">Nama</label></td>
                                     <td>:</td>
-                                    <td><input type="text" class="input-field" id="nama" placeholder="Nama" name="nama" style="width: 285px;"></td>
+                                    <td><input type="text" class="input-field" id="nama" required placeholder="Nama" name="nama" style="width: 285px;"></td>
                                 </tr>
                                 <tr>
                                     <td><label for="tanggal">Tanggal Lahir</label></td>
                                     <td>:</td>
-                                    <td><input type="date" name="tanggal" id="date" class="input-field"></td>
+                                    <td><input type="date" name="tanggal" id="date" required class="input-field"></td>
                                 </tr>
                                 <tr>
                                     <td><label for="gender">Jenis Kelamin</label></td>
                                     <td>:</td>
-                                    <td>
-                                        <input type="radio" name="gender" id="laki"><label for="laki">Laki-laki</label>
-                                        <input type="radio" name="gender" id="perempuan"><label for="perempuan">Perempuan</label>
+                                    <td id="gender-container">
+                                        <input type="radio" name="gender" required id="laki" value="Laki-laki" ><label for="laki">Laki-laki</label>
+                                        <input type="radio" name="gender" required id="perempuan" value="Perempuan"><label for="perempuan">Perempuan</label>
                                     </td>
                                     
                                 </tr>
                                 <tr>
                                     <td style="vertical-align: top;"><label for="pesan">Pesan</label></td>
                                     <td style="vertical-align: top;">:</td>
-                                    <td><textarea name="pesan" id="pesan" rows="7" style="width: 18rem; border-radius: 7px; border-style: solid; resize: none;" placeholder="Pesan"></textarea></td>
+                                    <td><textarea name="pesan" required id="pesan" rows="7" style="width: 18rem; border-radius: 7px; border-style: solid; resize: none;" placeholder="Pesan"></textarea></td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">
-                                        <input type="submit" name="submit" id=""  value="Submit" style="width: 100%;">
+                                        <input type="submit" name="submit" class="formBtn"  value="Submit" style="width: 100%;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="reset" class="formBtn" style="width: 100%;" value="Reset">
                                     </td>
                                 </tr>
                             </tbody></table>
@@ -102,12 +107,33 @@
                            </form>
                     </div>
                     <div class="formValue-content">
-                        <div class="formValue-data" id="data-nama"><label class="value-header">Current Time:</label></div>
+                        <div class="formValue-data">
+                            <label class="value-header">Current Time:</label>
+                            <label id="currentTime"></label>
+                        </div>
                         <br/>
-                        <div class="formValue-data" id="data-nama"><label class="value-header">Nama:</label></div>
-                        <div class="formValue-data" id="data-tanggalLahir"><label class="value-header">Tanggal Lahir:</label></div>
-                        <div class="formValue-data" id="data-jenisKelamin"><label class="value-header">Jenis Kelamin:</label></div>
-                        <div class="formValue-data" id="data-pesan"><label class="value-header">Pesan:</label></div>
+                        <div class="formValue-data">
+                            <label class="value-header" id="header-data-nama">Nama :    </label>
+                            <label id="data-nama"></label>
+                        </div>
+
+                        <div class="formValue-data">
+                            <label class="value-header" id="header-data-date">Tanggal Lahir :   </label>
+                            <label  id="data-tanggalLahir"></label>
+                        </div>
+
+                        <div class="formValue-data">
+                            <label class="value-header" id="header-data-jenisKelamin">Jenis Kelamin :   <label>
+                            <label id="data-gender"></label>
+                        </div>
+                        <div class="formValue-data">
+                            <label class="value-header" id="header-data-pesan">Pesan :</label>
+                            <label id="data-pesan"></label>
+                        </div>
+
+                        <div id="deleteBtn-container">
+                            <button onclick="reset()" id="deleteBtn">Hapus Pesan</button>
+                        </div>
                        
                     </div>
                 </article>
