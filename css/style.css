@@ -28,13 +28,13 @@ header {
     align-items: center;
     border-bottom: 1px solid;
     height: 4rem;
-   
 }
 
 .link-container {
     display: flex;
     list-style-type: none;
     margin-right: 4rem;
+    
 }
 
 .border-pinggir-a{
@@ -194,25 +194,38 @@ section {
     cursor: pointer;
 }
 
+#emptyProfile {
+    display: flex;
+    flex: 2;
+}
+
 @media only screen and (max-width: 600px){
+    main {
+        padding: 0;
+    }
+
     .navigasi {
         flex-direction: column;
         display: flex;
-        height: 15rem;
+        height: 20rem;
         align-items: center;
         justify-content: center;
         border: none;
+        width: 100%;
     }
     .link-container{
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         align-items: center;
         padding-top: 1rem;
+        margin-top: 1rem;
+        margin-right: 7rem;
+    }
+    .nav-link{
+
+        margin: 0;
     }
 
-    .nav-link{
-        padding: 0 100rem 0;
-    }
 
     .border-pinggir-a, .border-pinggir-b{
         border-radius: 0;
@@ -221,6 +234,33 @@ section {
     .logo-icon{
         margin: 0;
         
+    }
+
+    #emptyProfile {
+        display: none;
+        flex: 0;
+    }
+
+    .profile-container{
+        flex: 1;
+    }
+
+    .message-section {
+        margin-bottom: 10rem;
+    }
+
+    .message-container {
+        flex-direction: column;
+        height: 35rem;
+    }
+
+    .form-content {
+        padding: 0;
+    }
+
+    .formValue-content{
+        margin-top: 3rem;
+        width: 100%;
     }
     
 }
