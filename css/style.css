@@ -48,7 +48,9 @@ header {
 }
 
 .nav-link {
-    padding: 5px 28px 5px;
+    width: 1rem;
+    height: 10px;
+    padding: 5px 10px 5px;
     color: black;
     border: 1px solid;
     text-decoration: none;
@@ -64,9 +66,25 @@ header {
 }
 
 .banner-container {
+    
+    
+    border-bottom: 1px solid;
+    
+}
+
+.slideImg {
+width: 100%;
+height: 578px;
+
+}
+
+.slideNav {
     width: 100%;
     height: 578px;
-    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .profile-section {
@@ -174,4 +192,35 @@ section {
     padding-top: 7px;
     padding-bottom: 7px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .navigasi {
+        flex-direction: column;
+        display: flex;
+        height: 15rem;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    .link-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .nav-link{
+        padding: 0 100rem 0;
+    }
+
+    .border-pinggir-a, .border-pinggir-b{
+        border-radius: 0;
+    }
+
+    .logo-icon{
+        margin: 0;
+        
+    }
+    
 }

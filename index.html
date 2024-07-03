@@ -34,7 +34,16 @@
             <article>
                 <p>Ini adalah website latihan pertama</p>
             </article>
-            <div class="banner-container"></div>
+            <div class="banner-container">
+                <img src="https://dummyimage.com/50x578/000/fff.png&text=Icon" class="slideImg">
+                <img src="https://dummyimage.com/50x578/000/fff.png&text=Icon" class="slideImg">
+                <img src="https://dummyimage.com/50x578/000/fff.png&text=Icon" class="slideImg">
+
+                <div >
+                    <button onclick="plusSlide(-1)">Previous</button>
+                    <button onclick="plusSlide(1)">Next</button>
+                </div>
+            </div>
         </section>
 
 
@@ -65,12 +74,12 @@
                 <h1>Message Us</h1>
                 <article class="message-container">
                     <div class="form-content">
-                        <form action="javascript:display();" target="_self" method="post">
+                        <form onsubmit="return validateForm()" name="form-message">
                             <table class="formTable">
                                 <tbody><tr>
-                                    <td><label for="nama">Nama</label></td>
+                                    <td><label for="nama">Nama Lengkap</label></td>
                                     <td>:</td>
-                                    <td><input type="text" class="input-field" id="nama" required placeholder="Nama" name="nama" style="width: 285px;"></td>
+                                    <td><input type="text" class="input-field" id="nama" required placeholder="Nama Lengkap" name="nama" style="width: 285px;"></td>
                                 </tr>
                                 <tr>
                                     <td><label for="tanggal">Tanggal Lahir</label></td>
@@ -144,6 +153,6 @@
         <p>Created by Fajrul</p>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/cobaSendiri.js"></script>
 </body>
 </html>
