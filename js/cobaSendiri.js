@@ -9,26 +9,30 @@ let displayGender = document.getElementById('data-gender')
 let displayPesan = document.getElementById('data-pesan')
 let currentTime = new Date();
 document.getElementById('currentTime').innerHTML = currentTime
+
+// Home Greeting
 let greetName = document.getElementById('username-home');
 function greeting(){
 
-    if(localStorage.getItem('NamaHome')){
+    if(localStorage.getItem('NamaHome') ){
         greetName.innerHTML = localStorage.getItem('NamaHome')
         
-    }else{
+    }else {
         let a = prompt('Siapakah Nama Anda?');
         localStorage.setItem('NamaHome', a );
         greetName.innerHTML = localStorage.getItem('NamaHome')
     }
     
-    if(localStorage.getItem('NamaHome') == 'null' || localStorage.getItem('NamaHome') == ''){
+    if((localStorage.getItem('NamaHome') == 'null') || (localStorage.getItem('NamaHome') == '')){
         greetName.innerHTML = 'User'
     }
   
 }
-
 greeting()
 
+
+
+// Mengambil nilai pesan pengirim
 displayNama.textContent =   localStorage.getItem('Nama')
 displayBirth.textContent =  localStorage.getItem('Tanggal Lahir')
 displayGender.textContent =  localStorage.getItem('Jenis Kelamin')
@@ -40,7 +44,7 @@ const perempuan = document.getElementById('perempuan').value;
 
 
 
-
+// Function validasi form
 function validateForm() {
     let dataNama = document.getElementById('nama'); 
     let dataBirth = document.getElementById('date').value;
@@ -65,12 +69,13 @@ function validateForm() {
     location.href = './index.html'
 }
 
-
+// Function mereset data pesan pengirim dan nama pada home greeting
 function reset() {
     localStorage.clear();
     location.href = './index.html'
 }
 
+// Function slide dan autoslide
 let slideIndex = 1;
 showSlide(slideIndex)
 function showSlide(n){
@@ -90,7 +95,7 @@ function plusSlide(n){
     showSlide((slideIndex += n))
     
 }
-
+// Auto Slide
 setInterval(() => {
     plusSlide(1)
 },2500)
